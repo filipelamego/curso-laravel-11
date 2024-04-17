@@ -7,6 +7,8 @@
 </head>
 <body>
     <h1>Usuários</h1>
+
+    <a href="{{ route('users.create') }}">Novo</a>
     <table>
         <thead>
             <tr>
@@ -24,7 +26,7 @@
                 </tr>
             @empty
                 <tr>
-                    <td colspan="100">Nenhum usuário no base64_encode</td>
+                    <td colspan="100">Nenhum usuário no banco de dados</td>
                 </tr>
             @endforelse
         </tbody>
